@@ -36,6 +36,7 @@
 		C69707B71DBF86E200407BBA /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69707BB1DBF86E200407BBA /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		C69707BD1DBF86E200407BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C69707C61DBF8E7300407BBA /* FoodPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FoodPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 				C69707AD1DBF86E200407BBA /* Assets.xcassets */,
 				C69707AF1DBF86E200407BBA /* LaunchScreen.storyboard */,
 				C69707B21DBF86E200407BBA /* Info.plist */,
+				C69707C61DBF8E7300407BBA /* FoodPlayground.playground */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
