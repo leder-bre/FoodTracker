@@ -44,8 +44,8 @@
                                     <constraint firstAttribute="trailing" secondItem="7eD-y5-JI9" secondAttribute="trailing" id="wJq-Hm-eWr"/>
                                 </constraints>
                             </stackView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="k6V-lp-fJo">
-                                <frame key="frameInset" minX="16" minY="192" maxX="39" maxY="155"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="k6V-lp-fJo">
+                                <frame key="frameInset" minX="16" minY="192" width="343" height="343"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="k6V-lp-fJo" secondAttribute="height" multiplier="1:1" id="rHK-19-Dxn"/>
@@ -61,13 +61,14 @@
                             <constraint firstItem="R9q-aH-HND" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P8N-dT-BEx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R9q-aH-HND" secondAttribute="trailing" id="R28-wc-qTJ"/>
                             <constraint firstItem="R9q-aH-HND" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="VCK-MS-wwM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k6V-lp-fJo" secondAttribute="trailing" constant="23" id="pJj-fK-KuB"/>
+                            <constraint firstItem="k6V-lp-fJo" firstAttribute="leading" secondItem="R9q-aH-HND" secondAttribute="leading" id="pS7-F9-dNd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mealNameLabel" destination="L52-yi-C9k" id="KlQ-g5-HvP"/>
                         <outlet property="nameTextField" destination="7eD-y5-JI9" id="Fr3-JS-zrQ"/>
                         <outlet property="photoImageView" destination="k6V-lp-fJo" id="BGj-c0-2Tm"/>
-                        <outlet property="selectImageFromPhotoLibrary" destination="aW9-fk-iGt" id="xig-Jf-3dp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
