@@ -54,20 +54,22 @@
                                     <outletCollection property="gestureRecognizers" destination="aW9-fk-iGt" appends="YES" id="lXf-Oj-ggM"/>
                                 </connections>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSF-BK-CdQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSF-BK-CdQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                 <frame key="frameInset" minX="16" minY="543" maxX="16" maxY="8"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KSF-BK-CdQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8je-Vi-MgT"/>
                             <constraint firstItem="k6V-lp-fJo" firstAttribute="top" secondItem="R9q-aH-HND" secondAttribute="bottom" constant="12" id="BgA-pQ-IP8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KSF-BK-CdQ" secondAttribute="bottom" constant="8" id="KUw-YR-CDF"/>
                             <constraint firstItem="R9q-aH-HND" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P8N-dT-BEx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R9q-aH-HND" secondAttribute="trailing" id="R28-wc-qTJ"/>
                             <constraint firstItem="R9q-aH-HND" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="VCK-MS-wwM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="k6V-lp-fJo" secondAttribute="trailing" constant="23" id="pJj-fK-KuB"/>
                             <constraint firstItem="k6V-lp-fJo" firstAttribute="leading" secondItem="R9q-aH-HND" secondAttribute="leading" id="pS7-F9-dNd"/>
+                            <constraint firstItem="KSF-BK-CdQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zum-6R-nhe"/>
                         </constraints>
                     </view>
                     <connections>
