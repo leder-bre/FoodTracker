@@ -32,12 +32,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yH-gH-jpe">
-                                        <state key="normal" title="Set Default Label Text"/>
-                                        <connections>
-                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uh9-xS-NSg"/>
-                                        </connections>
-                                    </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="k6V-lp-fJo">
                                         <gestureRecognizers/>
                                         <constraints>
@@ -68,6 +62,7 @@
                         <outlet property="mealNameLabel" destination="L52-yi-C9k" id="KlQ-g5-HvP"/>
                         <outlet property="nameTextField" destination="7eD-y5-JI9" id="Fr3-JS-zrQ"/>
                         <outlet property="photoImageView" destination="k6V-lp-fJo" id="BGj-c0-2Tm"/>
+                        <outlet property="ratingControl" destination="KSF-BK-CdQ" id="Q6i-hd-ZBW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
