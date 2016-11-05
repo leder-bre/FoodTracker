@@ -10,7 +10,11 @@ import UIKit
 
 class RatingControl: UIView {
 	// MARK: Properties
-	var rating = 0
+	var rating = 0 {
+		didSet {
+			setNeedsLayout() //New stuff alert: didSet-if rating changes, setNeedsLayout-update GUI
+		}
+	}
 	var ratingButtons = [UIButton]()
 	let spacing = 5
 	let starCount = 5
@@ -39,17 +43,24 @@ class RatingControl: UIView {
 			buttonFrame.origin.x = CGFloat(index * (44 + spacing))
 			button.frame = buttonFrame
 		}
+		updateButtonSelectionStates()
 	}
 	override public var intrinsicContentSize: CGSize {
 		get {
 			let buttonSize = Int(frame.size.height)
 			let width = (buttonSize * starCount) + (spacing * (starCount-1))
 			print("height: \(buttonSize)")
-			return CGSize(width: width, height: 44) //ERROR: buttonSize is always 1000 despite being 44 in layoutSubviews, meaning this is called before frame setup
+			return CGSize(width: width, height: 44) //ERROR: buttonSize is always 1000 despite being 44 in layoutSubviews, meaning this something is improperly linked
 		}
 	}
 	// MARK: Button Action
 	func ratingButtonTapped(button: UIButton) {
-		print("Button Pressed")
+		rating = ratingButtons.index(of: button)!+1
+		updateButtonSelectionStates()
+	}
+	func updateButtonSelectionStates() {
+		for (index,button) in ratingButtons.enumerated() {
+			button.isSelected = index < rating
+		}
 	}
 }
