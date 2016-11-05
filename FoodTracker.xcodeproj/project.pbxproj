@@ -10,6 +10,8 @@
 		C6147F7D1DCA5FC700F3782D /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6147F7C1DCA5FC700F3782D /* RatingControl.swift */; };
 		C6524C821DCE991D00698318 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6524C811DCE991D00698318 /* Meal.swift */; };
 		C6524C841DCEA32B00698318 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6524C831DCEA32B00698318 /* MealTableViewCell.swift */; };
+		C6524C871DCEA75200698318 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6524C851DCEA75200698318 /* MealTableViewController.swift */; };
+		C6524C881DCEA75200698318 /* MealTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6524C861DCEA75200698318 /* MealTableViewController.xib */; };
 		C69707A71DBF86E200407BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69707A61DBF86E200407BBA /* AppDelegate.swift */; };
 		C69707A91DBF86E200407BBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69707A81DBF86E200407BBA /* ViewController.swift */; };
 		C69707AC1DBF86E200407BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69707AA1DBF86E200407BBA /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		C6147F7C1DCA5FC700F3782D /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; usesTabs = 1; };
 		C6524C811DCE991D00698318 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; usesTabs = 1; };
 		C6524C831DCEA32B00698318 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		C6524C851DCEA75200698318 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		C6524C861DCEA75200698318 /* MealTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MealTableViewController.xib; sourceTree = "<group>"; };
 		C69707A31DBF86E200407BBA /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69707A61DBF86E200407BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C69707A81DBF86E200407BBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -89,6 +93,8 @@
 				C6524C811DCE991D00698318 /* Meal.swift */,
 				C69707AA1DBF86E200407BBA /* Main.storyboard */,
 				C6524C831DCEA32B00698318 /* MealTableViewCell.swift */,
+				C6524C851DCEA75200698318 /* MealTableViewController.swift */,
+				C6524C861DCEA75200698318 /* MealTableViewController.xib */,
 				C6147F7C1DCA5FC700F3782D /* RatingControl.swift */,
 				C69707AD1DBF86E200407BBA /* Assets.xcassets */,
 				C69707AF1DBF86E200407BBA /* LaunchScreen.storyboard */,
@@ -192,6 +198,7 @@
 			files = (
 				C69707B11DBF86E200407BBA /* LaunchScreen.storyboard in Resources */,
 				C69707AE1DBF86E200407BBA /* Assets.xcassets in Resources */,
+				C6524C881DCEA75200698318 /* MealTableViewController.xib in Resources */,
 				C69707AC1DBF86E200407BBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +221,7 @@
 				C69707A91DBF86E200407BBA /* ViewController.swift in Sources */,
 				C6147F7D1DCA5FC700F3782D /* RatingControl.swift in Sources */,
 				C69707A71DBF86E200407BBA /* AppDelegate.swift in Sources */,
+				C6524C871DCEA75200698318 /* MealTableViewController.swift in Sources */,
 				C6524C841DCEA32B00698318 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

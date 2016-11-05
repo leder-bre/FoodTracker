@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqn-uc-NQ2">
-                                            <frame key="frameInset" minX="97" minY="8" width="278" height="21"/>
+                                            <frame key="frameInset" minX="97" minY="7" width="278" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -42,6 +42,11 @@
                                         </view>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="kqn-uc-NQ2" id="rDq-IX-HFh"/>
+                                    <outlet property="photoImageView" destination="o9Y-Mb-9Gy" id="yoF-V8-gt4"/>
+                                    <outlet property="ratingControl" destination="nbw-O7-naQ" id="J9Y-c0-qSy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
