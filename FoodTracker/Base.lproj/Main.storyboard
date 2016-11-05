@@ -38,38 +38,30 @@
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uh9-xS-NSg"/>
                                         </connections>
                                     </button>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="k6V-lp-fJo">
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="k6V-lp-fJo" secondAttribute="height" multiplier="1:1" id="rHK-19-Dxn"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="aW9-fk-iGt" appends="YES" id="lXf-Oj-ggM"/>
+                                        </connections>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="KSF-BK-CdQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="7eD-y5-JI9" firstAttribute="leading" secondItem="R9q-aH-HND" secondAttribute="leading" id="pdf-Le-o0T"/>
                                     <constraint firstAttribute="trailing" secondItem="7eD-y5-JI9" secondAttribute="trailing" id="wJq-Hm-eWr"/>
                                 </constraints>
                             </stackView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="k6V-lp-fJo">
-                                <frame key="frameInset" minX="16" minY="192" width="343" height="343"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="k6V-lp-fJo" secondAttribute="height" multiplier="1:1" id="rHK-19-Dxn"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="aW9-fk-iGt" appends="YES" id="lXf-Oj-ggM"/>
-                                </connections>
-                            </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSF-BK-CdQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                <frame key="frameInset" minX="16" minY="543" maxX="16" maxY="8"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KSF-BK-CdQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8je-Vi-MgT"/>
-                            <constraint firstItem="k6V-lp-fJo" firstAttribute="top" secondItem="R9q-aH-HND" secondAttribute="bottom" constant="12" id="BgA-pQ-IP8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KSF-BK-CdQ" secondAttribute="bottom" constant="8" id="KUw-YR-CDF"/>
                             <constraint firstItem="R9q-aH-HND" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P8N-dT-BEx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="R9q-aH-HND" secondAttribute="trailing" id="R28-wc-qTJ"/>
                             <constraint firstItem="R9q-aH-HND" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="VCK-MS-wwM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="k6V-lp-fJo" secondAttribute="trailing" constant="23" id="pJj-fK-KuB"/>
-                            <constraint firstItem="k6V-lp-fJo" firstAttribute="leading" secondItem="R9q-aH-HND" secondAttribute="leading" id="pS7-F9-dNd"/>
-                            <constraint firstItem="KSF-BK-CdQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zum-6R-nhe"/>
                         </constraints>
                     </view>
                     <connections>
