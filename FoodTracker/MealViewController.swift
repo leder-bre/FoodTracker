@@ -22,17 +22,25 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 		//Handle the text field's user input through delegate calls
 		nameTextField.delegate = self
 		//Set the view controller to the delegating object
-		
+		checkValidMealName()
 	}
 	//MARK: UITextFieldDelegate
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		textField.resignFirstResponder()
 		return true
 	}
+	func textFieldDidBeginEditing(_ textField: UITextField) {
+		saveButton.isEnabled = false
+	}
+	func checkValidMealName() {
+		let text = nameTextField.text ?? ""
+		saveButton.isEnabled = !text.isEmpty
+	}
 	func textFieldDidEndEditing(_ textField: UITextField) {
+		checkValidMealName()
+		navigationItem.title = textField.text
 	}
 	//MARK: UIImagePickerDelegate
-	
 	func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
 		dismiss(animated: true, completion: nil)
 	}

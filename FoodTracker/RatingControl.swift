@@ -24,7 +24,7 @@ class RatingControl: UIView {
 		super.init(coder: aDecoder)
 		let filledStarImage = #imageLiteral(resourceName: "filledStar")
 		let emptyStarImage = #imageLiteral(resourceName: "emptyStar")
-		for _ in 0...(starCount-1) {
+		for _ in 0..<starCount {
 			let button = UIButton()
 			button.setImage(emptyStarImage, for: .normal)
 			button.setImage(filledStarImage, for: .selected)
