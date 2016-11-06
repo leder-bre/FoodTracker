@@ -24,23 +24,36 @@
                                     <frame key="frameInset" width="375" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="o9Y-Mb-9Gy">
-                                            <frame key="frameInset" width="89" height="89"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="o9Y-Mb-9Gy">
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="o9Y-Mb-9Gy" secondAttribute="height" multiplier="1:1" id="wh8-17-H8F"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqn-uc-NQ2">
-                                            <frame key="frameInset" minX="97" minY="7" width="278" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqn-uc-NQ2">
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbw-O7-naQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                            <frame key="frameInset" minX="97" minY="37" width="240" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbw-O7-naQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                            <frame key="frameInset" minX="97" minY="37" width="216" height="44"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="nbw-O7-naQ" secondAttribute="height" multiplier="60:11" id="hKx-Cj-0n2"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="kqn-uc-NQ2" secondAttribute="trailing" id="3t8-vg-j0y"/>
+                                        <constraint firstItem="kqn-uc-NQ2" firstAttribute="top" secondItem="04i-yi-Hjd" secondAttribute="top" constant="7" id="7G3-a8-qo6"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nbw-O7-naQ" secondAttribute="trailing" constant="30" id="EFf-bM-heH"/>
+                                        <constraint firstAttribute="bottom" secondItem="o9Y-Mb-9Gy" secondAttribute="bottom" id="I4o-lT-lpD"/>
+                                        <constraint firstItem="o9Y-Mb-9Gy" firstAttribute="top" secondItem="04i-yi-Hjd" secondAttribute="top" id="T9s-bO-lrU"/>
+                                        <constraint firstItem="nbw-O7-naQ" firstAttribute="leading" secondItem="o9Y-Mb-9Gy" secondAttribute="trailing" constant="8" id="Zlf-2f-yul"/>
+                                        <constraint firstItem="kqn-uc-NQ2" firstAttribute="leading" secondItem="o9Y-Mb-9Gy" secondAttribute="trailing" constant="8" id="ZrJ-DA-P44"/>
+                                        <constraint firstItem="nbw-O7-naQ" firstAttribute="top" secondItem="kqn-uc-NQ2" secondAttribute="bottom" constant="9" id="o6n-y1-9r3"/>
+                                        <constraint firstItem="nbw-O7-naQ" firstAttribute="bottom" secondItem="04i-yi-Hjd" secondAttribute="bottomMargin" id="wFs-Kv-Bgx"/>
+                                        <constraint firstItem="o9Y-Mb-9Gy" firstAttribute="leading" secondItem="04i-yi-Hjd" secondAttribute="leading" id="wwR-te-hde"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="kqn-uc-NQ2" id="rDq-IX-HFh"/>
@@ -96,6 +109,10 @@
                                     </imageView>
                                     <view contentMode="center" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="KSF-BK-CdQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="293" id="E5k-mC-86f"/>
+                                            <constraint firstAttribute="height" constant="44" id="Qzb-FP-frI"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -115,7 +132,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="dom-9H-rPS">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="g9I-53-6NU"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="bMs-bD-L2u"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="bMs-bD-L2u">
+                            <connections>
+                                <segue destination="ckP-P3-BLd" kind="unwind" unwindAction="unWindToMealListWithSender:" id="Lxh-0e-yXF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="7eD-y5-JI9" id="Fr3-JS-zrQ"/>
@@ -125,6 +146,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="ckP-P3-BLd" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="aW9-fk-iGt">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="0yK-jt-bHF"/>
