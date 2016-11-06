@@ -14,7 +14,7 @@ class Meal: NSObject, NSCoding {
 	var photo: UIImage?
 	var rating: Int
 	static let DocumentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-	static let ArchiveURL = DocumentsDirectory[0].appendPathComponent("meals")
+	static let ArchiveURL = DocumentsDirectory[0].appendingPathComponent("meals")
 	
 	init?(name: String, photo: UIImage?, rating:Int){
 		self.name = name
