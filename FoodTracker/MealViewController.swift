@@ -21,6 +21,12 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 		super.viewDidLoad()
 		//Handle the text field's user input through delegate calls
 		nameTextField.delegate = self
+		if let meal = meal {
+			navigationItem.title = meal.name
+			nameTextField.text = meal.name
+			photoImageView.image = meal.photo
+			ratingControl.rating = meal.rating
+		}
 		//Set the view controller to the delegating object
 		checkValidMealName()
 	}
@@ -53,6 +59,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 	//MARK: Navigation
 	@IBAction func cancel(_ sender: UIBarButtonItem) {
 		dismiss(animated: true, completion: nil)
+		print ("CANCEL")
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
