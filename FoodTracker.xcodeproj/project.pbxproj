@@ -163,6 +163,7 @@
 				TargetAttributes = {
 					C69707A21DBF86E200407BBA = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = W4883LG747;
 						ProvisioningStyle = Automatic;
 					};
 					C69707B61DBF86E200407BBA = {
@@ -361,9 +362,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4883LG747;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ca.on.rsgc.FoodTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = leder.brendan.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -373,9 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4883LG747;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ca.on.rsgc.FoodTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = leder.brendan.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
