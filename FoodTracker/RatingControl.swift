@@ -39,7 +39,6 @@ class RatingControl: UIView {
 	override func layoutSubviews() {
 		self.layoutIfNeeded()
 		let buttonSize = Int(frame.size.height)
-		print("height2: \(buttonSize)")
 		var buttonFrame = CGRect(x: 0, y: 0, width: buttonSize, height: buttonSize)
 		for(index,button) in ratingButtons.enumerated() {
 			buttonFrame.origin.x = CGFloat(index * (44 + spacing))
@@ -51,7 +50,6 @@ class RatingControl: UIView {
 		get {
 			let buttonSize = Int(self.frame.size.height)
 			let width = (buttonSize * starCount) + (spacing * (starCount-1))
-			print("height: \(buttonSize)")
 			return CGSize(width: width, height: buttonSize) //ERROR: buttonSize is always 1000 despite being 44 in layoutSubviews, meaning this something is improperly linked
 		}
 	}

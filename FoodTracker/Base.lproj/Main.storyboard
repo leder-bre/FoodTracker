@@ -34,8 +34,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbw-O7-naQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                            <frame key="frameInset" minX="97" minY="37" width="216" height="44"/>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbw-O7-naQ" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="nbw-O7-naQ" secondAttribute="height" multiplier="60:11" id="hKx-Cj-0n2"/>
@@ -50,7 +49,6 @@
                                         <constraint firstItem="o9Y-Mb-9Gy" firstAttribute="top" secondItem="04i-yi-Hjd" secondAttribute="top" id="T9s-bO-lrU"/>
                                         <constraint firstItem="nbw-O7-naQ" firstAttribute="leading" secondItem="o9Y-Mb-9Gy" secondAttribute="trailing" constant="8" id="Zlf-2f-yul"/>
                                         <constraint firstItem="kqn-uc-NQ2" firstAttribute="leading" secondItem="o9Y-Mb-9Gy" secondAttribute="trailing" constant="8" id="ZrJ-DA-P44"/>
-                                        <constraint firstItem="nbw-O7-naQ" firstAttribute="top" secondItem="kqn-uc-NQ2" secondAttribute="bottom" constant="9" id="o6n-y1-9r3"/>
                                         <constraint firstItem="nbw-O7-naQ" firstAttribute="bottom" secondItem="04i-yi-Hjd" secondAttribute="bottomMargin" id="wFs-Kv-Bgx"/>
                                         <constraint firstItem="o9Y-Mb-9Gy" firstAttribute="leading" secondItem="04i-yi-Hjd" secondAttribute="leading" id="wwR-te-hde"/>
                                     </constraints>

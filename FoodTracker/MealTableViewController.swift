@@ -103,10 +103,6 @@ class MealTableViewController: UITableViewController {
     }
     */
     
-    @IBAction func cancel(_ sender: UIBarButtonItem){
-        dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func unWindToMealList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? MealViewController, let meal = sourceViewController.meal {
             let newIndexPath = IndexPath(row: meals.count, section: 0)
